@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+
+    <head>
+    <title>WolfSoftWareStudio</title>
+     
+    <link rel="stylesheet" href="test.css">
+    <meta charset="utf-8">
+   
+  </head>
+<body> 
+
+<video width="1920" height="1080" autoplay>
+  <source src="wolftestconverted.mp4" type="video/mp4">
+  
+  Your browser does not support HTML5 video.
+</video>
+
+<script>
+function scaleVideo() {
+    var vid = document.getElementsByTagName('video')[0];
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+
+    if (w/16 >= h/9) {
+        vid.setAttribute('width', w);
+        vid.setAttribute('height', 'auto');
+    } else {
+        vid.setAttribute('width', 'auto');
+        vid.setAttribute('height', h);
+    }
+}
+</script>
+
+</body> 
+</html>
